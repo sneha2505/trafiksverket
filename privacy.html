@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Category B Driving Licence Expiry Date</title>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – Trafikverket Exam Slot Notifier</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
-    table { border-collapse: collapse; width: 100%; max-width: 500px; margin-top: 1em; }
-    th, td { border: 1px solid #ddd; padding: 8px; }
-    th { background-color: #f2f2f2; text-align: left; }
+    body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.6; color: #333; padding: 0 1rem; }
+    h1, h2 { color: #005aaa; }
+    h1 { font-size: 2rem; }
+    h2 { margin-top: 1.5rem; font-size: 1.5rem; }
+    p, ul { margin-top: 1rem; }
+    ul { list-style-type: disc; margin-left: 2rem; }
   </style>
 </head>
 <body>
-  <h1>Category B Driving Licence Expiry Date in Sweden</h1>
+  <h1>Privacy Policy – Trafikverket Exam Slot Notifier</h1>
+  <p><strong>Last updated:</strong> July 31, 2025</p>
 
-  <p>If you passed your practical exam for <strong>Category B</strong> (car licence) on <strong>July 29, 2025</strong>, your licence will be valid for <strong>10 years</strong> from the issue date. It will therefore expire on <strong>July 29, 2035</strong>.</p>
+  <p>This Chrome extension helps users monitor available driving exam time slots on Trafikverket’s website. It does <strong>not collect, transmit, or store any personal data</strong> beyond what is necessary to trigger local notifications.</p>
 
-  <h2>📅 Summary</h2>
-  <table>
-    <tr>
-      <th>Date of issue</th>
-      <td>July 29, 2025</td>
-    </tr>
-    <tr>
-      <th>Validity period</th>
-      <td>10 years (standard for Category B car licences)</td>
-    </tr>
-    <tr>
-      <th>Expiry date</th>
-      <td>July 29, 2035</td>
-    </tr>
-  </table>
+  <h2>1. Information Collected</h2>
+  <ul>
+    <li>No personal data is collected.</li>
+    <li>User preferences (e.g., refresh interval) are handled locally in the browser cache only.</li>
+    <li>No data is stored permanently via <code>chrome.storage</code> or synced across devices.</li>
+  </ul>
 
-  <p>Transportstyrelsen typically sends a renewal notice by mail to your registered Swedish address about <strong>2–3 months before expiry</strong>. When it arrives, you’ll need to follow the standard renewal process.</p>
+  <h2>2. Data Usage</h2>
+  <p>No data is transmitted to external servers. If the user opts in, the extension can send notification alerts via email, based only on data the user explicitly provides (e.g., their email address). This email service is user-initiated; no background email collection occurs.</p>
 
-  <p>If you’d like help calculating the renewal timeline or understanding the renewal steps in more detail, just let me know!</p>
+  <h2>3. Permissions Used</h2>
+  <ul>
+    <li><code>scripting</code> / <code>content_scripts</code> — to interact with the Trafikverket website and detect available test slots.</li>
+    <li><code>identity</code> — not used to collect personal data; only employed if users sign in (optional). You may remove it if not implemented.</li>
+    <li><code>notifications</code> — to provide desktop alerts when exam slots become available.</li>
+    <li><code>storage</code> — reserved but <em>not actively used</em> to store user preferences since nothing is persisted via <code>chrome.storage</code>.</li>
+  </ul>
+
+  <h2>4. Notifications</h2>
+  <p>Notifications are shown only when a new exam time slot is detected. Alerts are triggered by user‑initiated checks and display minimal details (e.g. date/time of slot). Notifications appear only while the browser is active; no background tracking is performed.</p>
+
+  <h2>5. Data Sharing & Third Parties</h2>
+  <p>No data is shared with any third parties. No analytics, tracking, or advertising tools are used. If email notifications are enabled, they are sent directly by the client and <strong>not stored or shared with any external service</strong> by default.</p>
+
+  <h2>6. Security</h2>
+  <p>All processing is done locally within your Chrome browser. No data is transmitted or stored externally unless the user explicitly uses the email notification feature. The extension does <strong>not collect browsing history</strong> or track user activity outside Trafikverket.</p>
+
+  <h2>7. GDPR & CCPA Compliance</h2>
+  <p>Since no personal or sensitive data is collected or processed, this extension does <strong>not</strong> fall under GDPR or CCPA data collection requirements. Users retain complete control—there is nothing to request or delete, as no persistent data exists.</p>
+
+  <h2>8. User Rights</h2>
+  <p>As no personal data is processed, rights to access, amendment, or deletion of personal data do not apply. Users can manage notification behavior via Chrome’s notification settings or through extension options.</p>
+
+  <h2>9. Contact</h2>
+  <p>If you have questions about this policy or the extension’s behavior, contact: <br>
+  <strong>Email:</strong> your-email@example.com</p>
 </body>
 </html>
